@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniversário da Verônica</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #f4f4f9;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #1e1e1e;
+            color: #f4f4f9;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            animation: fadeInDown 1s ease-in-out;
+        }
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .section-title {
+            font-size: 2em;
+            margin-top: 20px;
+            color: #ff6f61;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .moment {
+            background-color: #1e1e1e;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .moment:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .moment img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 10px;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+        .moment img:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+        .stats-panel {
+            background-color: #2a2a2a;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+            animation: fadeInUp 1s ease-in-out;
+        }
+        .stats-panel h2 {
+            font-size: 1.8em;
+            color: #ff6f61;
+            text-align: center;
+        }
+        .stats-panel p {
+            font-size: 1.2em;
+            color: #f4f4f9;
+        }
+        .music-player {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            margin-top: 20px;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .music-player h2 {
+            color: #ff6f61;
+        }
+        footer {
+            background-color: #1e1e1e;
+            color: #f4f4f9;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Feliz Aniversário, Ve!</h1>
+        <p>Celebrando momentos especiais</p>
+    </header>
+    <div class="container">
+        <div class="stats-panel" id="stats-panel">
+            <h2>Estatísticas da Vida</h2>
+            <p id="days-lived"></p>
+            <p id="heartbeats"></p>
+            <p id="breaths"></p>
+            <p id="steps"></p>
+            <p id="blinks"></p>
+            <p id="distance-light"></p>
+            <p id="hair-grown"></p>
+            <p id="water-consumed"></p>
+        </div>
+        <div class="music-player">
+            <h2>Música de Sucesso de 2001</h2>
+            <p>América: "Hanging by a Moment" - Lifehouse</p>
+            <audio controls>
+                <source src="path-to-hanging-by-a-moment.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <p>Brasil: "Popozuda Rock n' Roll" - De Falla</p>
+            <audio controls>
+                <source src="path-to-popozuda-rock-n-roll.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <section>
+            <h2 class="section-title">Datas Especiais</h2>
+            <div class="moment">
+                <h3>Data 1: 26/10/2023</h3>
+                <p>Primera partida de ping-pong.</p>
+                <img src="crachamodel.png" alt="Momento Especial 1">
+            </div>
+            <div class="moment">
+                <h3>Data 2: 15/05/2022</h3>
+                <p>Descrição do momento especial.</p>
+                <img src="link-da-imagem2.jpg" alt="Momento Especial 2">
+            </div>
+        </section>
+        <section>
+            <h2 class="section-title">Momentos Inesquecíveis</h2>
+            <div class="moment">
+                <h3>Momento 1</h3>
+                <p>Descrição do momento inesquecível.</p>
+                <img src="link-da-imagem3.jpg" alt="Momento Inesquecível 1">
+            </div>
+            <div class="moment">
+                <h3>Momento 2</h3>
+                <p>Descrição do momento inesquecível.</p>
+                <img src="link-da-imagem4.jpg" alt="Momento Inesquecível 2">
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>Feito com carinho para Verônica</p>
+    </footer>
+
+    <script>
+        function calculateDaysLived(birthDate) {
+            const currentDate = new Date();
+            const birth = new Date(birthDate);
+            const timeDifference = currentDate - birth;
+            const daysLived = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+            return daysLived;
+        }
+
+        function calculateHeartbeats(daysLived) {
+            const averageHeartRate = 80; // batimentos por minuto
+            const minutesInDay = 1440; // 24 horas * 60 minutos
+            const heartbeats = daysLived * minutesInDay * averageHeartRate;
+            return heartbeats.toLocaleString();
+        }
+
+        function calculateBreaths(daysLived) {
+            const averageBreathingRate = 16; // respirações por minuto
+            const minutesInDay = 1440; // 24 horas * 60 minutos
+            const breaths = daysLived * minutesInDay * averageBreathingRate;
+            return breaths.toLocaleString();
+        }
+
+        function calculateSteps(daysLived) {
+            const averageStepsPerDay = 7000; // passos por dia
+            const steps = daysLived * averageStepsPerDay;
+            return steps.toLocaleString();
+        }
+
+        function calculateBlinks(daysLived) {
+            const averageBlinksPerMinute = 15; // piscadas por minuto
+            const minutesInDay = 1440; // 24 horas * 60 minutos
+            const blinks = daysLived * minutesInDay * averageBlinksPerMinute;
+            return blinks.toLocaleString();
+        }
+
+        function calculateLightDistance(daysLived) {
+            const speedOfLight = 299792458; // metros por segundo
+            const secondsInDay = 86400; // 24 horas * 60 minutos * 60 segundos
+            const distance = daysLived * secondsInDay * speedOfLight;
+            return (distance / 9.461e15).toFixed(2); // em anos-luz
+        }
+
+        function calculateHairGrown(daysLived) {
+            const averageHairGrowth = 0.44; // milímetros por dia
+            const hairGrown = daysLived * averageHairGrowth;
+            return hairGrown.toFixed(2); // em milímetros
+        }
+
+        function calculateWaterConsumed(daysLived) {
+            const averageWaterIntake = 2; // litros por dia
+            const waterConsumed = daysLived * averageWaterIntake;
+            return waterConsumed.toLocaleString(); // em litros
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const birthDate = '2000-07-10'; // Ajuste a data de nascimento de Verônica aqui
+            const daysLived = calculateDaysLived(birthDate);
+            const heartbeats = calculateHeartbeats(daysLived);
+            const breaths = calculateBreaths(daysLived);
+            const steps = calculateSteps(daysLived);
+            const blinks = calculateBlinks(daysLived);
+            const lightDistance = calculateLightDistance(daysLived);
+            const hairGrown = calculateHairGrown(daysLived);
+            const waterConsumed = calculateWaterConsumed(daysLived);
+
+            document.getElementById('days-lived').textContent = `Verônica já viveu ${daysLived} dias.`;
+            document.getElementById('heartbeats').textContent = `Seu coração já bateu aproximadamente ${heartbeats} vezes.`;
+            document.getElementById('breaths').textContent = `Você já respirou cerca de ${breaths} vezes.`;
+            document.getElementById('steps').textContent = `Você deu cerca de ${steps} passos.`;
+            document.getElementById('blinks').textContent = `Você piscou aproximadamente ${blinks} vezes.`;
+            document.getElementById('distance-light').textContent = `A luz viajou cerca de ${lightDistance} anos-luz desde que você nasceu.`;
+            document.getElementById('hair-grown').textContent = `Seu cabelo cresceu aproximadamente ${hairGrown} milímetros.`;
+            document.getElementById('water-consumed').textContent = `Você consumiu cerca de ${waterConsumed} litros de água.`;
+        });
+    </script>
+</body>
+</html>
