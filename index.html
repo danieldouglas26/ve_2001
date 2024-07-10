@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <title>Aniversário da Verônica</title>
     <style>
         body {
@@ -33,15 +35,29 @@
             text-align: center;
             animation: fadeIn 1s ease-in-out;
         }
+
+        .mensagemfinal{ 
+            background-color: #1e1e1e;
+            margin: 10px 0px;
+            margin-bottom: 50px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;}
+
         .moment {
             background-color: #1e1e1e;
-            margin: 20px 0;
+            margin: 10px 0px;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .moment:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .mensagemfinal:hover {
             transform: translateY(-5px);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
         }
@@ -64,6 +80,7 @@
             animation: fadeInUp 1s ease-in-out;
         }
         .stats-panel h2 {
+            margin-bottom: 10px;
             font-size: 1.8em;
             color: #ff6f61;
             text-align: center;
@@ -88,7 +105,8 @@
             background-color: #1e1e1e;
             color: #f4f4f9;
             text-align: center;
-            padding: 10px 0;
+            margin-top: 10px;
+            padding: 13px 0;
             position: fixed;
             width: 100%;
             bottom: 0;
@@ -130,8 +148,8 @@
 </head>
 <body>
     <header>
-        <h1>Feliz Aniversário, Ve!</h1>
-        <p>Celebrando momentos especiais</p>
+        <h1>Feliz Aniversário, Ze!</h1>
+        <p>Separie algumas coisas, espero que goste</p>
     </header>
     <div class="container">
         <div class="stats-panel" id="stats-panel">
@@ -142,47 +160,71 @@
             <p id="steps"></p>
             <p id="blinks"></p>
             <p id="distance-light"></p>
-            <p id="hair-grown"></p>
-            <p id="water-consumed"></p>
+            <!--p id="hair-grown"></p>
+            <p id="water-consumed"></p-->
+            <p>O indesk já parou ∞ vezes desde do ano que você entrou na empresa.</p>
         </div>
         <div class="music-player">
-            <h2>Música de Sucesso de 2001</h2>
-            <p>América: "Hanging by a Moment" - Lifehouse</p>
+            <h2>Música de sucesso do ano em que você nasceu</h2>
+            <p>Global: "Thank You" - Dido</p>
             <audio controls>
-                <source src="path-to-hanging-by-a-moment.mp3" type="audio/mp3">
+                <source src="Dido - Thank You (Official Video).mp3" type="audio/mp3">
                 Your browser does not support the audio element.
             </audio>
-            <p>Brasil: "Popozuda Rock n' Roll" - De Falla</p>
+            <p>Brasil: "Quem De Nós Dois" - Ana Carolina</p>
             <audio controls>
-                <source src="path-to-popozuda-rock-n-roll.mp3" type="audio/mp3">
+                <source src="Ana Carolina - Quem De Nós Dois (La Mia Storia Tra Le Dita).mp3" type="audio/mp3">
                 Your browser does not support the audio element.
             </audio>
         </div>
         <section>
             <h2 class="section-title">Datas Especiais</h2>
-            <div class="moment">
-                <h3>Data 1: 26/10/2023</h3>
-                <p>Primera partida de ping-pong.</p>
-                <img src="crachamodel.png" alt="Momento Especial 1">
-            </div>
-            <div class="moment">
-                <h3>Data 2: 15/05/2022</h3>
-                <p>Descrição do momento especial.</p>
-                <img src="link-da-imagem2.jpg" alt="Momento Especial 2">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="moment">
+                        <h3>26/10/2023</h3>
+                        <p>Nossa primeira partida de ping-pong (de acordo com o Spark)</p>
+                        <img src="1.jpg" alt="Momento Especial 1">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="moment">
+                        <h3>19/02/2024</h3>
+                        <p>Nossa primeira partida de sinuca (de acordo com o Spark)</p>
+                        <img src="2.jpg" alt="Momento Especial 2">
+                    </div>
+                </div>
             </div>
         </section>
+        <!--section>
+            <h2 class="section-title">Momentos Aleatórios</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="moment">
+                        <h3>Andreia e Joyce passando em frente a sua sala toda hora</h3>
+                        <p>E eu não percebendo isso</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="moment">
+                        <h3></h3>
+                        <p>Aquele momento em que perdemos a conta de quantas vezes rimos até doer a barriga.</p>
+                    </div>
+                </div>
+            </div>
+        </section-->
         <section>
-            <h2 class="section-title">Momentos Inesquecíveis</h2>
-            <div class="moment">
-                <h3>Momento 1</h3>
-                <p>Descrição do momento inesquecível.</p>
-                <img src="link-da-imagem3.jpg" alt="Momento Inesquecível 1">
-            </div>
-            <div class="moment">
-                <h3>Momento 2</h3>
-                <p>Descrição do momento inesquecível.</p>
-                <img src="link-da-imagem4.jpg" alt="Momento Inesquecível 2">
-            </div>
+            <h2 class="section-title">Mensagem final</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mensagemfinal"-->
+                        <!--h3>Por Daniel,</h3-->
+                        <!--p>É muito bom saber, que os anos vão, a idade chega, e você sempre continua a mesma, sempre com o mesmo sorriso e sempre com o mesmo jeitinho que a torna especial. E como passa rapído né? Lembro da gente no 9° ano pensando no futuro como algo bem distante, e hoje já pensamos em faculdade. A idade vem chegando, as rotinas vão mudando e a gente acaba se afastando, mas idepende de onde eu esteja, saiba que você pode sempre contar comigo, que estarei ao seu lado para celebrar as conquistas, e também para te apoiar nas dificuldades. Desejo tudo de bom para você!!!
+                        </p-->
+                        <p>Você sem dúvida foi a pessoal mais legal que eu conheci na empresa, e de todas, foi com quem eu mais indetifiquei. Vou estar aqui sempre que precisar, independente do que seja. (Parceiros de sinuca e de vida) 
+                        </p>
+                    </div>
+                </div>
         </section>
     </div>
     <footer>
@@ -255,7 +297,7 @@
             const hairGrown = calculateHairGrown(daysLived);
             const waterConsumed = calculateWaterConsumed(daysLived);
 
-            document.getElementById('days-lived').textContent = `Verônica já viveu ${daysLived} dias.`;
+            document.getElementById('days-lived').textContent = `Você já viveu ${daysLived} dias.`;
             document.getElementById('heartbeats').textContent = `Seu coração já bateu aproximadamente ${heartbeats} vezes.`;
             document.getElementById('breaths').textContent = `Você já respirou cerca de ${breaths} vezes.`;
             document.getElementById('steps').textContent = `Você deu cerca de ${steps} passos.`;
